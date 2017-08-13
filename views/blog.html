@@ -1,0 +1,37 @@
+<div class="container">
+	<div class="row">
+		<div class="span12">
+		<div class="page-header">
+				<h1>
+				Статьи
+			</h1>
+		</div>
+		</div>
+	</div>
+
+  <!-- /. PAGE TITLE-->
+
+
+
+	<div class="row">
+		<h2>Сдесь вы можете найти полезную информаци о компьютерах, ноутбуках и прочей цифровой техники, а также об их профилактике и ремонте!</h2>
+	
+		<div class="span9" *ngFor="let article of articles.articles" >
+			<!--Blog Post-->
+			<div class="blog-post">
+				<h2>{{article.title}}</h2>
+
+					<img src="{{article.img}}" style="width: 800px; height: 400px;">
+					<br>
+					<hr>
+
+					<a class="btn btn-primary" routerLink="/blog-details/{{article.id}}">Read More</a>			
+			</div>
+		</div>	
+
+		<!--==================-->
+	</div>
+
+	
+</div>
+	

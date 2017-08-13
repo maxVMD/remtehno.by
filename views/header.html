@@ -1,0 +1,91 @@
+<div id="header-row">
+    <div class="container">
+      <div class="row">
+              <!--LOGO-->
+              <div class="col-md-6 col-md-8 col-xs-8">
+
+                  <div class="span3" style="float: left;"><a class="brand" href="/"><img src="img/logo.png"></a>
+                  <br>
+                      <div class="span6" style="font-size: 19px; float: left; padding-right: 60px;"  >
+                          <span style="padding-right: 10px;" ><img src="img/velcom.png" alt="телефон" style="width: 25px; height: 25px;"><b>+375 29 365-53-48</b></span><br>
+                          <span style="padding-right: 10px;" ><img src="img/mts.png" alt="телефон" style="width: 25px; height: 25px;"><b>+375 33 365-53-48</b></span>
+                          
+                      </div>
+                  </div>
+
+                  
+              </div>
+                        
+              
+              <!-- /LOGO -->
+
+            <!-- MAIN NAVIGATION --> 
+         
+              <div class="span9">
+                <div class="navbar  pull-right">
+                  <div class="navbar-inner">
+
+                      <button type="button" data-target="#navbar-collapse" data-toggle="collapse" class="btn btn-navbar" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+
+                      <div id="navbar-collapse" class="nav-collapse" >
+                        <ul class="nav navbar-nav" style="font-size: 18px;">
+                          <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+                            <a  routerLink="" >Главная</a>
+                          </li>
+                          <li routerLinkActive="active">
+                            <a [routerLink]="['about']" >О нас</a>
+                          </li>
+                          <li routerLinkActive="active">
+                            <a [routerLink]="['services']" >Цены</a>
+                          </li>
+                          <li routerLinkActive="active">
+                            <a routerLink="/blog" >Статьи</a>
+                          </li>
+                          <li routerLinkActive="active">
+                            <a routerLink="/contact" >Контакты</a>
+                          </li>
+                        </ul> 
+                      </div> 
+                  </div>
+                          
+                </div>
+
+              </div>
+              
+            <!-- MAIN NAVIGATION -->  
+      </div><br>
+      
+    </div>
+
+  </div>
+  <!-- /HEADER ROW -->
+  <div class="container-fluid">
+   
+  <router-outlet></router-outlet>
+
+
+  </div>
+<!--Footer
+==========================-->
+<footer>
+    <div class="container">
+      <div class="row">
+        <div class="span6">Wavemasters 2017 <br>
+        </div>
+        <div class="span6">
+            <div class="social pull-right">
+                <a href="#"><img src="img/social/googleplus.png" alt=""></a>
+                <a href="#"><img src="img/social/dribbble.png" alt=""></a>
+                <a href="#"><img src="img/social/twitter.png" alt=""></a>
+                <a href="#"><img src="img/social/dribbble.png" alt=""></a>
+                <a href="#"><img src="img/social/rss.png" alt=""></a>
+            </div>
+        </div>
+      </div>
+    </div>
+</footer>
