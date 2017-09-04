@@ -12,98 +12,30 @@
 	</div>
 
   <!-- /. PAGE TITLE-->
-
+		<p><b>Все цены установлены только на работу мастера, <strong style="color: red;">без учета запчастей</strong>. 
+			Некоторые цены могут меняться из-за специфике или сложности работы.</b>
+		</p>
 
 		<div class="col-md-12">
-			<table class="table table-hover">
-				<caption><b>Ноутбуки</b></caption>
+			<table class="table table-hover table-bordered">
+				<caption><h3><b>Ноутбуки</b></h3></caption><br>
 			    <thead>
 
 			        <tr>
 			            <th>Наименование работ</th>
+			            <th>Описание работы</th>
 			            <th>цена в рублях</th>
 			        </tr>
 			    </thead>
 			    <tbody>
-			        <tr>
-			            <td>Установка ОС и ПО</td>
-			            <td>30</td>
-			        </tr>
-			        <tr>
-			            <td>Установка програм</td>
-			            <td>от 2</td>
-			        </tr>
-			        <tr>
-			            <td>Установка Антивируса</td>
-			            <td>5</td>
-			        </tr>
-			        <tr>
-			            <td>Чистка ноутбука</td>
-			            <td>30</td>
-			        </tr>
-			        <tr>
-			            <td>замена матрицы</td>
-			            <td>от 100</td>
-			        </tr>
-			        <tr>
-			            <td>замена USB</td>
-			            <td>от 30</td>
-			        </tr>
-			        <tr>
-			            <td>ремонт разьема питания</td>
-			            <td>от 40</td>
-			        </tr>
-			        <tr>
-			            <td>ремонт чего то еще</td>
-			            <td>100000</td>
+			        <tr *ngFor="let nb of price.notebookPrice">
+			            <td>{{nb.name}}</td>
+			            <td>{{nb.desc}}</td>
+			            <td>{{nb.price}}</td>
 			        </tr>
 			    </tbody>
 			</table>
 				<hr>
-			<table class="table table-hover">
-				<caption><b>Мобильные Телефоны</b></caption>
-			    <thead>
-
-			        <tr>
-			            <th>Наименование работ</th>
-			            <th>цена в рублях</th>
-			        </tr>
-			    </thead>
-			    <tbody>
-			        <tr>
-			            <td>Установка ОС и ПО</td>
-			            <td>30</td>
-			        </tr>
-			        <tr>
-			            <td>Установка програм</td>
-			            <td>от 2</td>
-			        </tr>
-			        <tr>
-			            <td>Установка Антивируса</td>
-			            <td>5</td>
-			        </tr>
-			        <tr>
-			            <td>Чистка ноутбука</td>
-			            <td>30</td>
-			        </tr>
-			        <tr>
-			            <td>замена матрицы</td>
-			            <td>от 100</td>
-			        </tr>
-			        <tr>
-			            <td>замена USB</td>
-			            <td>от 30</td>
-			        </tr>
-			        <tr>
-			            <td>ремонт разьема питания</td>
-			            <td>от 40</td>
-			        </tr>
-			        <tr>
-			            <td>ремонт чего то еще</td>
-			            <td>100000</td>
-			        </tr>
-			    </tbody>
-			</table>
 		</div>
 
 	

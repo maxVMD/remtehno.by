@@ -16,5 +16,13 @@ export class HttpDataService{
                             let articlesList = resp.json();
                             return articlesList;
                         });
+    },
+
+    getPrice(){
+        return this.http.get('./price.json')
+        		.map((resp:Response)=>{
+                            let articlesList = resp.json();
+                            return articlesList;
+                        });
     }
 }

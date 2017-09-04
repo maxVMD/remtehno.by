@@ -22,6 +22,13 @@ var HttpDataService = (function () {
             return articlesList;
         });
     };
+    HttpDataService.prototype.getPrice = function () {
+        return this.http.get('./price.json')
+            .map(function (resp) {
+            var articlesList = resp.json();
+            return articlesList;
+        });
+    };
     return HttpDataService;
 }());
 HttpDataService = __decorate([

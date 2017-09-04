@@ -14,7 +14,7 @@
 
 
 	<div class="row">
-		<h2>Сдесь вы можете найти полезную информаци о компьютерах, ноутбуках и прочей цифровой техники, а также об их профилактике и ремонте!</h2>
+		<h2 style="text-align: center;"><b>Сдесь вы можете найти полезную информаци о компьютерах <br> ноутбуках и прочей цифровой техники, а также об их профилактике и ремонте!</b></h2>
 	
 		<div class="span9" *ngFor="let article of articles.articles" >
 			<!--Blog Post-->
@@ -25,7 +25,7 @@
 					<br>
 					<hr>
 
-					<a class="btn btn-primary" routerLink="/blog-details/{{article.id}}">Read More</a>			
+					<a class="btn btn-success btn-lg" routerLink="/blog-details/{{article.id}}">Подробнее..</a>			
 			</div>
 		</div>	
 
